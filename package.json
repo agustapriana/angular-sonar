@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "sonar":"sonar-scanner",
+    "sonar": "sonar-scanner",
     "build:prod": "ng build --prod",
     "test:prod": "ng test --browsers=ChromeHeadless --watch=false --code-coverage"
   },
@@ -37,6 +37,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "karma-sonarqube-unit-reporter": "0.0.23",
     "sonar-scanner": "^3.1.0",
     "tslint-sonarts": "^1.9.0",
     "typescript": "~4.3.2"
