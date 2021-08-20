@@ -29,14 +29,10 @@ module.exports = function (config) {
       dir: require('path').join(__dirname, './coverage/angular-soner'),
       subdir: '.',
       reporters: [
+        { type: 'lcov' },
         { type: 'html' },
         { type: 'text-summary' }
       ]
-    },
-    coverageIstanbulReporter: {
-      dir: require('path').join(__dirname, '../coverage'),
-      reports: ['lcovonly'],
-      fixWebpackSourcePaths: true
     },
     sonarQubeUnitReporter: {
       sonarQubeVersion: 'LATEST',
