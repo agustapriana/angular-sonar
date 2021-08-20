@@ -1,6 +1,3 @@
-sonar.host.url=https://sonarcloud.io
-sonar.login=879ca8d0f56a4513ccaf0ab496c4bc68f0f3be90
-sonar.organization=agustapriana
 sonar.projectKey=agustapriana_angular-sonar
 sonar.projectName=agustapriana_angular-sonar
 sonar.projectVersion=1.0
