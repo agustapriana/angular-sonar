@@ -1,3 +1,5 @@
-<input type="text">
-<input type="text">
-<button>TEST</button>
+<input [(ngModel)]="awal" type="text">
+<input [(ngModel)]="akhir" type="text">
+<button (click) = "jumlah()">JUMLAH</button>
+
+<h2>{{hasil}}</h2>
