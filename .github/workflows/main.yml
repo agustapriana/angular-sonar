@@ -31,7 +31,6 @@ jobs:
         run: |
           npm ci
           npm run test:prod
-          npm run sonar
       
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
