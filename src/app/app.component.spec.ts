@@ -26,10 +26,16 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('angular-soner');
   });
 
-  it('should render title', () => {
+  it(`should hasil`, () => {
     const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    app.awal = 1 ;
+    app.akhir = 2 ;
     fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-soner app is running!');
+    app.jumlah();
+    fixture.detectChanges();
+    expect(app.hasil).toEqual(3);
   });
+
+
 });
